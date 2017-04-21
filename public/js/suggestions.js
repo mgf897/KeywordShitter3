@@ -26,7 +26,7 @@ var suggestions = function(){
             "youtube":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=yt&gl=${country}&callback=?&q=",
             "google videos":
-            "http://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=v&gl=${country}&callback=?&q=",
+            "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=v&gl=${country}&callback=?&q=",
             "google images":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=i&gl=${country}&callback=?&q=",
             "yahoo":
@@ -34,7 +34,7 @@ var suggestions = function(){
             "bing": "https://api.bing.com/osjson.aspx?JsonType=callback&JsonCallback=?&query=",
             "ebay":
             "https://autosug.ebay.com/autosug?_jgr=1&sId=0&_ch=0&callback=?&kwd=",
-            "amazon":
+            "amazon (english)":
             "https://completion.amazon.co.uk/search/complete?method=completion&search-alias=aps&mkt=3&callback=?&q=",
             "twitter":
             "https://twitter.com/i/search/typeahead.json?count=30&result_type=topics&src=SEARCH_BOX&callback=?&q=",
