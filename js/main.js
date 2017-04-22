@@ -29,6 +29,7 @@ var KWS = function(){
                 // reset these
                 this.saveSettings();
                 $('#startjob').val('Stop Job').text('Stop shitting').addClass('btn-danger');
+                $("#results").removeClass('hidden');
                 this.hashMapInputs = {};
                 this.keywordsToQuery = [];
                 this.keywordsToQueryIndex = 0;
@@ -169,10 +170,15 @@ var KWS = function(){
         /** Display results **/
         displayResults: function(retList, search, dontDisplay, url,data){
 
+            /** 
+            TODO
+            Add link to google trends result
+            https://trends.google.com.au/trends/explore?q= **/
+
             var rows=[];
             retList=_.map(retList,this.CleanVal);
             for (var i = 0; i < retList.length; i++) {
-                var  cleanKw = retList[i];
+                var  cleanKw = "<a href='https://trends.google.com.au/trends/explore?q=" + retList[i] + "'>" + retList[i] + "</a>";
 
                 // url might be in retlist
                 if (url===undefined) url=data[i].url;
@@ -384,6 +390,7 @@ var KWS = function(){
             if (outputKeywords.length>this.options.maxQueueDisplay) sb+='...\n';
             $("#input").val(sb);
             $("#numofkeywords").html('Queue:' + outputKeywords.length);
+
         },
 
 
@@ -503,15 +510,15 @@ var KWS = function(){
 
             // setup table
             this.table = $('#outtable').DataTable({
-                pageLength: 25,
-                "lengthMenu": [ 10, 25, 50, 75, 100,800],
+                "paging":false,
                 dom:
-                "<'row'<'col-sm-5'B><'col-sm-7'<'pull-right'p>>>" +
-                "<'row'<'col-sm-8'i><'col-sm-4'<'pull-right'f>>>" +
-                    "<'row'<'col-sm-12'tr>>",
+                "<'row'<'col-sm-12'i>>" +
+                "<'row'<'col-sm-12'f>>" +
+                "<'row'<'col-sm-12'tr>>" +
+                "<'row'<'col-sm-12'<'pull-right'B>>>",
                 buttons: [
-                    'colvis',
-                    'pageLength',
+                    
+                    
                     {
                          extend: 'collection',
                          text: 'Export',

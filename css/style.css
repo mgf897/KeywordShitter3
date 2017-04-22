@@ -9,9 +9,13 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+ 
 }
 body {
   margin: 0;
+  color: #fff;
+  background-color: #1f1f1f;
+
 }
 article,
 aside,
@@ -1075,8 +1079,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.428571429;
-  color: #000000;
-  background-color: #ffffff;
+
 }
 input,
 button,
@@ -2239,6 +2242,7 @@ pre code {
 }
 table {
   background-color: transparent;
+  color: #000;
 }
 caption {
   padding-top: 8px;
@@ -6796,10 +6800,10 @@ body {
   font-weight: 200;
 }
 th {
-  color: #444444;
+  color: #fff;
 }
 legend {
-  color: #444444;
+  color: #fff;
 }
 label {
   font-weight: normal;
@@ -6868,6 +6872,7 @@ label {
 }
 .table.dataTable {
   min-height: 150px;
+
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
@@ -6875,7 +6880,7 @@ label {
 .table > thead > tr > td,
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
-  border-top: 0px solid #dddddd;
+  border-top: 0px solid #000;
 }
 @media screen and (max-width: 767px) {
   .table-responsive {
@@ -6892,3 +6897,13 @@ label {
   margin: 0px;
   padding: 0px;
 }
+
+.dataTables_info {
+  color: #fff !important;
+}
+
+
+.dataTables_filter {
+  color: #fff !important;
+}
+

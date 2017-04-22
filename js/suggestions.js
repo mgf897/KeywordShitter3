@@ -15,35 +15,39 @@ var suggestions = function(){
         },
 
         services:{
-            "google":
+            "Google":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&gl=${country}&callback=?&q=",
-            "google news":
+            "Google News":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=n&gl=${country}&callback=?&q=",
-            "google shopping":
+            "Google Shopping":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=sh&gl=${country}&callback=?&q=",
-            "google books":
+            "Google Books":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=bo&gl=${country}&callback=?&q=",
-            "youtube":
+            "Youtube":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=yt&gl=${country}&callback=?&q=",
-            "google videos":
+            "Google Videos":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=v&gl=${country}&callback=?&q=",
-            "google images":
+            "Google Images":
             "https://suggestqueries.google.com/complete/search?client=chrome&hl=${lang}&ds=i&gl=${country}&callback=?&q=",
-            "yahoo":
+            "Yahoo!":
             "https://search.yahoo.com/sugg/ff?output=jsonp&appid=ffd&callback=?&command=",
-            "bing": "https://api.bing.com/osjson.aspx?JsonType=callback&JsonCallback=?&query=",
-            "ebay":
+            "Bing": "https://api.bing.com/osjson.aspx?JsonType=callback&JsonCallback=?&query=",
+            "Ebay":
             "https://autosug.ebay.com/autosug?_jgr=1&sId=0&_ch=0&callback=?&kwd=",
-            "amazon (english)":
+            "Amazon (English)":
             "https://completion.amazon.co.uk/search/complete?method=completion&search-alias=aps&mkt=3&callback=?&q=",
-            "twitter":
+            "Amazon (German)":
+            "https://completion.amazon.co.uk/search/complete?method=completion&search-alias=aps&mkt=4&callback=?&q=",
+            "Amazon (French)":
+            "https://completion.amazon.co.uk/search/complete?method=completion&search-alias=aps&mkt=5&callback=?&q=",
+            "Twitter":
             "https://twitter.com/i/search/typeahead.json?count=30&result_type=topics&src=SEARCH_BOX&callback=?&q=",
-            "baidu": "https://suggestion.baidu.com/su?cb=?&wd=",
-            "yandex": "https://yandex.com/suggest/suggest-ya.cgi?callback=?&q=?&n=30&v=4&uil={lang}&part=",
-            "google play": "https://market.android.com/suggest/SuggRequest?json=1&c=0&hl=${lang}&gl=${country}&callback=?&query=", //
-            "google play apps": "https://market.android.com/suggest/SuggRequest?json=1&c=3&hl=${lang}&gl=${country}&callback=?&query=",
-            "google play movies": "https://market.android.com/suggest/SuggRequest?json=1&c=4&hl=${lang}&gl=${country}&callback=?&query=",
-            "google play books": "https://market.android.com/suggest/SuggRequest?json=1&c=1&hl=${lang}&gl=${country}&callback=?&query=",
+            "Baidu": "https://suggestion.baidu.com/su?cb=?&wd=",
+            "Yandex": "https://yandex.com/suggest/suggest-ya.cgi?callback=?&q=?&n=30&v=4&uil={lang}&part=",
+            "Google Play": "https://market.android.com/suggest/SuggRequest?json=1&c=0&hl=${lang}&gl=${country}&callback=?&query=", //
+            "Google Play Apps": "https://market.android.com/suggest/SuggRequest?json=1&c=3&hl=${lang}&gl=${country}&callback=?&query=",
+            "Google Play Movies": "https://market.android.com/suggest/SuggRequest?json=1&c=4&hl=${lang}&gl=${country}&callback=?&query=",
+            "Google Play Books": "https://market.android.com/suggest/SuggRequest?json=1&c=1&hl=${lang}&gl=${country}&callback=?&query=",
             // "kickasstorrents": "https://kat.cr/get_queries.php?query=", // not jsonp
         },
         /**
